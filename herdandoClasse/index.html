@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Herdando Classe</title>
+  </head>
+  <body>
+
+  <script type="text/javascript" src="Conta.js"></script>
+  <script type="text/javascript" src="ContaCorrente.js"></script>
+  <script type="text/javascript" src="ContaPoupanca.js"></script>
+  <script type="text/javascript">
+    let contaCorrente = new ContaCorrente(200);
+    let contaPoupanca = new ContaPoupanca(300);
+
+    contaCorrente.atualiza(2);
+    contaPoupanca.atualiza(3);
+
+    console.log(contaCorrente);
+    console.log(contaPoupanca);
+  </script>
+  </body>
+</html>
